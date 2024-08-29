@@ -261,7 +261,27 @@ body {
   font-style: 500;
   color: var(--gray-color-font);
 }
+#mobile-menu {
+  display: none;
+}
 
+/* Style for mobile menu button */
+.mobile-menu-button {
+  display: none;
+  text-align: right;
+  padding: 10px;
+}
+#mobile-menu.active {
+  display: block;
+  background-color: #f8f8f8;
+  padding: 10px 0;
+}
+
+#mobile-menu .btn {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+}
 /* XX Nav Bar END XX */
 
 /* XX Header END XX */
@@ -678,6 +698,14 @@ body {
   }
   .nav-bar-right {
     padding-top: 40px;
+  }
+
+  .nav-bar-menu {
+    display: none;
+  }
+
+  .nav-bar-right {
+    display: none;
   }
 
   /* -- Finance Solutions Sectuion START -- */

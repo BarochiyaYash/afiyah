@@ -10,3 +10,9 @@ document.querySelectorAll(".question-header").forEach((item) => {
     parentDiv.classList.toggle("active");
   });
 });
+
+
+document.getElementById('menu-toggle').addEventListener('click', function() {
+  var mobileMenu = document.getElementById('mobile-menu');
+  mobileMenu.classList.toggle('active');
+});
