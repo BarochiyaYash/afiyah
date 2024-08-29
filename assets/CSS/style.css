@@ -70,6 +70,7 @@ body {
   padding-right: 30px;
   padding-left: 30px;
 }
+
 .p-2-50 {
   padding-right: 50px;
   padding-left: 50px;
@@ -183,6 +184,10 @@ body {
 .flex--jc-sb {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+.flex--jc-sb-1 {
+  display: flex;
   justify-content: space-between;
 }
 .flex--col {
@@ -383,19 +388,31 @@ body {
   margin-bottom: 40px;
 }
 .question-div {
-  justify-content: start;
-  padding-left: 20px;
-  padding-right: 20px;
+  width: 50%;
 }
-.question-div > h3 {
+
+.question-div h3 {
   font-size: 32px;
   color: var(--primary-color);
+  cursor: pointer;
 }
-.questions-row {
-  /* display: flex; */
+.question-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
-.question-div {
-  /* width: 500px; */
+.question-content {
+  display: none;
+  padding: 10px 0;
+  font-size: 20px;
+  color: var(--primary-color);
+}
+.question-div.active .question-content {
+  display: block;
+}
+.question-div.active .question-header img {
+  transform: rotate(45deg);
+  transition: transform 0.3s;
 }
 /* XX Questions Section END XX  */
 
@@ -449,6 +466,10 @@ body {
   font-size: 16px;
   color: var(--gray-color-font);
 }
+.footer-col-4 h5 {
+  font-size: 16px;
+  color: var(--gray-color-font);
+}
 .footer-col {
   padding-bottom: 70px;
   border-bottom: 2px solid var(--gray-color);
@@ -475,6 +496,7 @@ body {
     align-items: center;
     justify-content: center;
   }
+
   .flex--ai-c-X * {
     display: flex;
     flex-direction: column;
@@ -487,6 +509,11 @@ body {
     align-items: center;
     justify-content: space-between;
   }
+  .flex--jc-sb-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   .flex--col {
     display: flex;
     /* flex-direction: row; */
@@ -495,6 +522,9 @@ body {
   .flex--d-row {
     display: flex;
     flex-direction: column;
+  }
+  .flex--d-row-m {
+    display: flex;
   }
   .flex--d-row-sb {
     display: flex;
@@ -514,65 +544,65 @@ body {
   }
 
   .p-1-10 {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 
   .p-1-20 {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 13px;
+    padding-bottom: 13px;
   }
   .p-1-30 {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 18px;
+    padding-bottom: 18px;
   }
   .p-1-50 {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 23px;
+    padding-bottom: 23px;
   }
   .p-2-10 {
-    padding-right: 5px;
-    padding-left: 5px;
+    padding-right: 8px;
+    padding-left: 8px;
   }
   .p-2-20 {
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 13px;
+    padding-left: 13px;
   }
   .p-2-30 {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 18px;
+    padding-left: 18px;
   }
   .p-2-50 {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 23px;
+    padding-left: 23px;
   }
   .m-1-10 {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 8px;
+    margin-bottom: 8px;
   }
   .m-1-20 {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 13px;
+    margin-bottom: 13px;
   }
   .m-1-30 {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 18px;
+    margin-bottom: 18px;
   }
 
   .gap10 {
-    gap: 5px;
+    gap: 8px;
   }
   .gap20 {
-    gap: 10px;
+    gap: 13px;
   }
   .gap30 {
-    gap: 15px;
+    gap: 18px;
   }
   .gap40 {
-    gap: 20px;
+    gap: 23px;
   }
   .gap70 {
-    gap: 25px;
+    gap: 28px;
   }
   .gap10-X * {
     gap: 5px;
@@ -604,9 +634,15 @@ body {
   .finance-solutions-title {
     max-width: 100%;
   }
+  .financial-guidance-left {
+    width: auto;
+  }
   .banner-title > h1 {
     font-size: 30px;
     color: var(--secondary-color);
+  }
+  .banner-left {
+    max-width: 100%;
   }
   .about-img-bg {
     background-image: url(../img/Mask-group.png);
@@ -667,6 +703,12 @@ body {
   .questions-section.flex--col.gap30 {
     gap: 0px;
   }
+  .question-div {
+    width: 100%;
+  }
+  .question-header h3 {
+    font-size: 20px;
+  }
   .restructure-left-option a {
     font-size: 18px;
   }
@@ -679,9 +721,21 @@ body {
   .about-img-bg {
     border-radius: 0px 0px 21px 21px;
   }
+  .about-left {
+    width: auto;
+  }
   .footer-icons.flex--d-row.gap30 {
     display: flex;
     flex-direction: row;
     justify-content: center;
+  }
+  .flex--d-row-sb.gap30.footer-col{
+    gap: 70px;
+  }
+  .footer-col-4.flex--col.gap70{
+    gap: 10px;
+  }
+  .footer-copyright {
+    padding-top: 70px;
   }
 }
