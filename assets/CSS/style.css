@@ -316,7 +316,7 @@ body {
   width: 50%;
 }
 .financial-guidance-right {
-  /* width: 40%; */
+  width: 40%;
 }
 .financial-guidance-text > p {
   font-size: 18px;
@@ -329,7 +329,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 700px;
+  width: 100%;
   height: 500px;
   border-radius: 0px 21px 21px 0px;
 }
@@ -428,7 +428,11 @@ body {
 .about-left {
   width: 50%;
 }
-
+.abotu-right{
+  max-width: 40%;
+  border-radius: 10px;
+  overflow: hidden;
+}
 .about-img-bg {
   background-image: url(../img/Mask-group.png);
   background-repeat: no-repeat;
@@ -558,8 +562,8 @@ body {
     padding-bottom: 18px;
   }
   .p-1-50 {
-    padding-top: 23px;
-    padding-bottom: 23px;
+    padding-top: 35px;
+    padding-bottom: 35px;
   }
   .p-2-10 {
     padding-right: 8px;
@@ -625,7 +629,7 @@ body {
   }
   .banner-img > img {
     padding-top: 50px;
-    width: 200px;
+    width: 300px;
   }
   .title-white-40 {
     font-family: var(--font-DJRDisplay);
@@ -650,8 +654,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 350px;
-    height: 510px;
+    width: 100%;
+
     border-radius: 0px 21px 21px 0px;
   }
   .restructure-right .input-style {
@@ -678,8 +682,6 @@ body {
   }
 
   .financial-guidance-img-bg {
-    width: 350px;
-    height: 400px;
     border-radius: 0px 0px 21px 21px;
   }
   .icon-text-1 div {
