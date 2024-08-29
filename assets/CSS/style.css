@@ -609,7 +609,7 @@ body {
     gap: 18px;
   }
   .gap40 {
-    gap: 23px;
+    gap: 35px;
   }
   .gap70 {
     gap: 28px;
@@ -624,7 +624,7 @@ body {
     gap: 15px;
   }
   .gap40-X * {
-    gap: 20px;
+    gap: 30px;
   }
 
   .title-span-darkblue-40 > span {
